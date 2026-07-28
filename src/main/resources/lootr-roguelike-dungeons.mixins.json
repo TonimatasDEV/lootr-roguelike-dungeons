@@ -3,7 +3,8 @@
   "package": "dev.tonimatas.mixin",
   "compatibilityLevel": "JAVA_25",
   "mixins": [
-    "BlockEntityTickerMixin"
+    "BlockEntityTickerMixin",
+    "DecoratedPotMixin"
   ],
   "injectors": {
     "defaultRequire": 1
