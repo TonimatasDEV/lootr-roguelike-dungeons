@@ -1,0 +1,31 @@
+{
+	"schemaVersion": 1,
+	"id": "lootr-roguelike-dungeons",
+	"version": "${version}",
+	"name": "Lootr: Roguelike Dungeons",
+	"description": "Make Roguelike Dungeons and Lootr compatible!",
+	"authors": [
+		"TonimatasDEV"
+	],
+	"contact": {
+		"homepage": "https://github.com/TonimatasDEV/lootr-roguelike-dungeons",
+		"sources": "https://github.com/TonimatasDEV/lootr-roguelike-dungeons"
+	},
+	"license": "GPL v3",
+	"icon": "assets/lootr-roguelike-dungeons/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"dev.tonimatas.LootrRoguelikeDungeons"
+		]
+	},
+	"mixins": [
+		"lootr-roguelike-dungeons.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~26.2",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
