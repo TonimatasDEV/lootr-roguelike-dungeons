@@ -31,9 +31,10 @@ dependencies {
 tasks.processResources {
 	val version = version
 	inputs.property("version", version)
+	inputs.property("minecraft_version_range", providers.gradleProperty("minecraft_version_range").get())
 
 	filesMatching("fabric.mod.json") {
-		expand("version" to version)
+		expand("version" to version, "minecraft_version_range" to providers.gradleProperty("minecraft_version_range").get())
 	}
 }
 
