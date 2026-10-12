@@ -1,5 +1,5 @@
 plugins {
-	id("net.fabricmc.fabric-loom") version "1.17-SNAPSHOT"
+	id("net.fabricmc.fabric-loom") version "1.18-SNAPSHOT"
 }
 
 version = providers.gradleProperty("mod_version").get()
@@ -23,9 +23,9 @@ dependencies {
 	implementation("net.fabricmc.fabric-api:fabric-api:${providers.gradleProperty("fabric_api_version").get()}")
 
 	// Roguelike Dungeons
-	implementation("maven.modrinth:MFpvbNGE:FIYUpGUY")
+	implementation("maven.modrinth:MFpvbNGE:kcbfVSMp")
 	// Lootr
-	implementation("maven.modrinth:EltpO5cN:1viskfeN")
+	implementation("maven.modrinth:EltpO5cN:gVwn7m2v")
 }
 
 tasks.processResources {
